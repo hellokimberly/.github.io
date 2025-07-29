@@ -16,54 +16,57 @@
       line-height: 1.6;
       background-color: #fff;
     }
+    
+    .announcement-banner {
+      background-color: #e3ff7c;
+      color: #272727;
+      text-align: center;
+      font-size: 15px;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
 
     header {
       background-color: #dae3e3;
       color: #002a38;
-      padding: 2rem 1rem;
+      padding: 1.5rem;
       position: relative;
     }
 
     .header-container {
-      max-width: 1000px;
       margin: 0 auto;
-      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
     }
 
     .header-text {
-      text-align: left;
-    }
-
-    .logo-link {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      display: inline-block;
-    }
-
-    .logo {
-      width: 60px;
-      height: auto;
-      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
     }
 
     header h1 {
-      font-family: 'Tenor Sans', sans-serif;
-      text-style: italic;
+      font-family: 'Gotu', sans-serif;
       color: #fc5456;
+      margin-bottom: 0.25rem;
+      font-size: 20px;
+      font-style: extra-bold;
     }
 
     nav {
-      background-color: #002a38;
-      padding: 0.5rem;
-      text-align: center;
+      display: flex;
+      gap: 1rem; /* spacing between links */
     }
 
     nav a {
-      color: #dae3de;
-      margin: 0 1rem;
+      color: #002a38;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline wavy #fc5456;
     }
 
     section {
@@ -99,20 +102,26 @@
   </style>
 </head>
 <body>
+  <div class="announcement-banner">
+    Now Open to Work / Looking for New Positions!
+  </div>
+  
   <header id="top">
     <div class="header-container">
       <div class="header-text">
         <h1>KIMBERLY TRAN</h1>
         <p>Digital Marketing & SEO Specialist – Driving Growth with Data and Creativity</p>
       </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">My Work</a>
+        <a href="#contact">Skills</a>
+        <a href="#contact">Resume</a>
+        <a href="#contact">Where SEO Can Improve</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section id="about">
     <h2>About Me</h2>
