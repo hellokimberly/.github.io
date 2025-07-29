@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kimberly Tran | Digital Marketing & SEO</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    /* Custom Fonts */
+    @font-face {
+      font-family: 'Reverie';
+      src: url('fonts/Reverie.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'EnowayProLight';
+      src: url('fonts/EnowayPro-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'EnowayProLight', sans-serif;
       color: #222;
       line-height: 1.6;
       background-color: #fff;
@@ -17,7 +32,7 @@
     header {
       background-color: #1a472a;
       color: #fff;
-      padding: 2.5rem 1rem;
+      padding: 2rem 1rem;
       position: relative;
     }
 
@@ -31,21 +46,10 @@
       text-align: center;
     }
 
-    .header-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .header-text p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
     .logo-link {
       position: absolute;
       top: 20px;
-      right: 20px;
+      left: 20px;
       display: inline-block;
     }
 
@@ -53,7 +57,10 @@
       width: 60px;
       height: auto;
       cursor: pointer;
-      border-radius: 4px;
+    }
+
+    header h1 {
+      font-family: 'Reverie', serif;
     }
 
     nav {
@@ -101,16 +108,16 @@
     }
   </style>
 </head>
-<body id="top">
-  <header>
+<body>
+  <header id="top">
     <div class="header-container">
+      <a href="#top" class="logo-link">
+        <img src="kt-logo.png" alt="Kimberly Tran Logo" class="logo">
+      </a>
       <div class="header-text">
         <h1>Kimberly Tran</h1>
         <p>Digital Marketing & SEO Specialist – Driving Growth with Data and Creativity</p>
       </div>
-      <a href="#top" class="logo-link">
-        <img src="kt-logo.png" alt="Kimberly Tran Logo" class="logo">
-      </a>
     </div>
   </header>
 
@@ -145,3 +152,10 @@
   </footer>
 </body>
 </html>
+"""
+
+# Save file
+output_file = Path("/mnt/data/index_custom_fonts.html")
+output_file.write_text(html_with_custom_fonts)
+
+output_file.name
