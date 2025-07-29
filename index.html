@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kimberly Tran | Digital Marketing & SEO</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -112,7 +113,7 @@
   <header id="top">
     <div class="header-container">
       <a href="#top" class="logo-link">
-        <img src="kt-logo.png" alt="Kimberly Tran Logo" class="logo">
+        <img src="images/kt-logo.png" alt="Kimberly Tran Logo" class="logo">
       </a>
       <div class="header-text">
         <h1>Kimberly Tran</h1>
@@ -154,8 +155,8 @@
 </html>
 """
 
-# Save file
-output_file = Path("/mnt/data/index_custom_fonts.html")
-output_file.write_text(html_with_custom_fonts)
+# Save updated index.html file
+output_file = Path("/mnt/data/index_with_images_folder.html")
+output_file.write_text(html_with_images_folder)
 
 output_file.name
