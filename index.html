@@ -18,8 +18,31 @@
     header {
       background-color: #1a472a;
       color: #fff;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
+      text-align: relative;
+    }
+    
+    .header-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative
+    }
+
+    .header-text {
       text-align: center;
+    }
+
+    .logo-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      diaply: inline-block;
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+      cursor: pointer;
     }
 
     header h1 {
@@ -79,10 +102,17 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kimberly Tran</h1>
-    <p>Digital Marketing & SEO Specialist – Driving Growth with Data and Creativity</p>
-  </header>
+<header>
+  <div class="header-container">
+    <div class="header-text">
+      <h1>Kimberly Tran</h1>
+      <p>Digital Marketing & SEO Specialist – Driving Growth with Data and Creativity</p>
+    </div>
+    <a href="#top" class="logo-link">
+      <img src="kt-logo!.png" alt="Kimberly Tran Logo" class="logo">
+    </a>
+  </div>
+</header>
 
   <nav>
     <a href="#about">About</a>
