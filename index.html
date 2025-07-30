@@ -14,12 +14,14 @@
       font-family: 'Gotu', sans-serif;
       color: #002a38;
       line-height: 1.6;
-      background-color: #fff;
+      background: linear-gradient(20deg, #dae3de,#e3ff7c);
+      background-attachement: fixed;
+      background-size: 200% 200%;
     }
     
     .announcement-banner {
       background-color: #e3ff7c;
-      color: #272727;
+      color: #002a38;
       text-align: center;
       font-size: 15px;
       padding: 0.5rem;
@@ -27,10 +29,12 @@
     }
 
     header {
-      background-color: #dae3e3;
       color: #002a38;
       padding: 1.5rem;
       position: relative;
+      background: linear-gradient(200deg, #fc5456,#c2f0ff);
+      background-attachement: fixed;
+      background-size: 200% 200%;
     }
 
     .header-container {
@@ -42,7 +46,7 @@
     }
 
     .header-text {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
     }
 
@@ -56,20 +60,27 @@
 
     nav {
       display: flex;
-      gap: 1rem; /* spacing between links */
+      gap: 1.4rem;
+      backgound: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
     }
 
     nav a {
       color: #002a38;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3 ease;
     }
 
     nav a:hover {
-      text-decoration: underline wavy #fc5456;
+      color: #e3ff7c
     }
 
     section {
+      backgound: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
       padding: 3rem 1rem;
       max-width: 900px;
       margin: 0 auto;
