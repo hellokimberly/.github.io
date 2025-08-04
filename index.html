@@ -135,6 +135,38 @@
       color: #fff;
       text-decoration: underline;
     }
+
+  .hero-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .hero-btn {
+  background-color: #fc5456;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #d13d3f;
+}
+
+.hero-btn.secondary {
+  background-color: transparent;
+  color: #fc5456;
+  border: 2px solid #fc5456;
+}
+
+.hero-btn.secondary:hover {
+  background-color: #fc5456;
+  color: #fff;
+}
   </style>
 </head>
 <body>
@@ -165,7 +197,13 @@
       <img src="images/kimberly-headshot.jpeg" alt="Kimberly Tran">
     </div>
     <div class="hero-text">
-      <h2>Hello, I'm Kimberly.</h2>
+      <p> Hello! I'm</p>
+      <h2>Kimberly</h2>
+      <Digital Marketing & SEO Specialist>
+    <div class="hero-buttons">
+        <a href="#portfolio" class="hero-btn">Download My Resume</a>
+        <a href="#contact" class="hero-btn secondary">Contact Me</a>
+    </div>
     </div>
   </div>
 </section>
