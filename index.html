@@ -167,6 +167,41 @@
   background-color: #fc5456;
   color: #fff;
 }
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* dark overlay */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #fc5456;
+}
   </style>
 </head>
 <body>
@@ -210,6 +245,27 @@
     <h3>Get in Touch</h3>
     <p>Email: <a href="mailto:kimberlytran52@gmail.com">kimberlytran52@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/kimberlytran52/" target="_blank">linkedin.com/in/kimberlytran52</a></p>
+
+    <script>
+  const modal = document.getElementById("contactModal");
+  const btn = document.getElementById("contactBtn");
+  const closeBtn = document.querySelector(".close-btn");
+
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function(e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
   </div>
 </div>    
     </div>
